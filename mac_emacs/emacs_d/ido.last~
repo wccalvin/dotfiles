@@ -1,0 +1,38 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/wccalvin/developer/python/" . "basics/")
+ ("/Users/wccalvin/developer/" . "python/")
+ ("/Users/wccalvin/" . "developer/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/wccalvin/developer/python/basics/"
+ "/Users/wccalvin/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "list.py"
+ ".emacs"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/wccalvin/" (22116 50959 0 0) "settings/" "Public/" "Pictures/" "perl5/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "developer/" "Desktop/" "Applications/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".perlbrew/" ".gitconfig" ".emacs~" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".cups/" ".cpan/" ".CFUserTextEncoding" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" "$MYVIMRC" "../" "./")
+
+ ("/Users/wccalvin/.emacs.d/" (22116 50962 0 0) "window-settings.el" "ui-settings.el" "text-settings.el" "replace-colorthemes/" "python-settings.el" "ido.last~" "ido.last" "ido-settings.el" "fill-column-indicator-settings.el" "emacs-for-python/" "elpa/" "cursor-settings.el" "color-theme-settings.el" "auto-save-list/" "../" "./")
+
+ ("/Users/wccalvin/developer/python/basics/" (22116 27951 0 0) "list.py" "avg_speed.py" "../" "./")
+
+ ("/Users/wccalvin/developer/python/" (22107 34392 0 0) "README.md" "basics/" ".git/" "../" "./")
+
+ ("/Users/wccalvin/developer/" (22116 31565 0 0) "sample/" "python/" "perl/" "emacs/" "../" "./")
+
+ ("/Users/wccalvin/.emacs.d/auto-complete-1.3.1/" (22116 30875 0 0) "auto-complete-settings.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
