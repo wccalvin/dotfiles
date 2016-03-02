@@ -1,0 +1,159 @@
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;; ==================
+;; Basic emacs config
+;; ==================
+
+;; path where settings files are kept
+(add-to-list 'load-path "~/.emacs.d/settings")
+
+;; disable alarm sound and use visual indication
+(setq visible-bell 1)
+
+;; always use spaces, not tabs, when indenting
+;; (setq indent-tabs-mode nil)
+
+;; ignore case when searching
+(setq case-fold-search t)
+
+;; require final newlines in files when they are saved
+(setq require-final-newline t)
+
+;----------------------;
+;;; Windows & Frames ;;;
+;----------------------;
+
+; language
+(setq current-language-environment "English")
+
+; don't show the startup screen
+(setq inhibit-startup-screen t)
+
+; don't show the menu bar
+(menu-bar-mode nil)
+
+; don't show the tool bar
+(require 'tool-bar)
+(tool-bar-mode nil)
+
+; don't show the scroll bar
+(scroll-bar-mode nil)
+
+; number of characters until the fill column
+(setq fill-column 70)
+
+; display line numbers to the right of the window
+(global-linum-mode t)
+; show the current line and column numbers in the stats bar as well
+(line-number-mode t)
+(column-number-mode t)
+
+
+;------------;
+;;; Cursor ;;;
+;------------;
+
+; don't blink the cursor
+(blink-cursor-mode nil)
+
+; make sure transient mark mode is enabled (it should be by default,
+; but just in case)
+(transient-mark-mode t)
+
+; turn on mouse wheel support for scrolling
+(require 'mwheel)
+(mouse-wheel-mode t)
+
+;-------------------------;
+;;; Syntax Highlighting ;;;
+;-------------------------;
+
+;; ; text decoration
+;; (require 'font-lock)
+;; (setq font-lock-maximum-decoration t)
+;; (global-font-lock-mode t)
+;; (global-hi-lock-mode nil)
+;; (setq jit-lock-contextually t)
+;; (setq jit-lock-stealth-verbose t)
+
+;; ; if there is size information associated with text, change the text
+;; ; size to reflect it
+;; (size-indication-mode t)
+
+;; ; highlight parentheses when the cursor is next to them
+;; (require 'paren)
+;; (show-paren-mode t)
+
+
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;; ====================
+;; Some Custom Packages
+;; ====================
+
+;; Fill Column Indicator
+(add-to-list 'load-path "~/.emacs.d/fill-column-indicator-1.83")
+(require 'fill-column-indicator)
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode t)
+(provide 'fill-column-indicator-settings)
+
+;---------------------;
+;;; Melpa Package  ;;;
+;---------------------;
+(require 'package)
+
+(add-to-list 'package-archives
+       '("melpa" . "http://melpa.org/packages/") t)
+
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+(defvar myPackages
+  '(better-defaults                     ; better than usual emacs default
+    auto-complete			; enable auto-complete
+    elpy 				; add the elpy package
+    flycheck                            ; add flycheck syntax check
+    material-theme))                    ; add emacs theme
+
+(mapc #'(lambda (package)
+    (unless (package-installed-p package)
+      (package-install package)))
+      myPackages)
+
+;------------------------;
+;;; Package Settings  ;;;
+;------------------------;
+(ac-config-default)			; enable auto-complete
+;; (electric-pair-mode t)			; enable auto-pairing
+(elpy-enable)				; enable elpy mode
+(load-theme 'material t)                ; enable material-theme
+
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
+(require 'autopair)
+(autopair-global-mode)                  ; enable autopair in all buffers
+
+
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;; =======================
+;; Emacs Settings for Perl
+;; =======================
+
+(defalias 'perl-mode 'cperl-mode)
+(setq cperl-invalid-face (quote off))
+(setq cperl-electric-keywords t) ;; expands for keywords such as foreach, while etc.
+(setq cperl-hairy t) ;; Turns on most of the cperl-mode options
+(setq cperl-indent-level 4
+      cperl-close-paren-offset -4
+      cperl-continued-statement-offset 4
+      cperl-indent-parens-as-block t
+      cperl-tab-always-indent t)
+(setq cperl-auto-newline t) ;; add newlines when you hit semi-colon
+
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
