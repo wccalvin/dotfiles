@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+def fun():
+    print("I am on an infinite loop.")
+
+if __name__ == '__main__':
+    while True:
+        fun()
+        msg = raw_input('Do you want to come out of the loop? (y) for yes and (n) for no: ')
+        if msg == 'y':
+            break

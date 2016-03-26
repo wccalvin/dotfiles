@@ -1,1 +1,1 @@
-# Config Files for vim, emacs and bash
+# Repo to organize init files for emacs and vim

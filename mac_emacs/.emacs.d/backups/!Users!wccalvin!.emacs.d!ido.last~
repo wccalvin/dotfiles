@@ -1,0 +1,44 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/wccalvin/developer/python/" . "basics/")
+ ("/Users/wccalvin/developer/" . "perl/")
+ ("/Users/wccalvin/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/wccalvin/"
+ "/Users/wccalvin/.emacs.d/"
+ "/Users/wccalvin/developer/python/basics/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".zshrc"
+ "init.el"
+ ".zsh-update"
+ "list.py"
+ ".emacs"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/wccalvin/.emacs.d/" (22263 5287 0 0) "snippets/" "places" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "backups/" "auto-save-list/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/wccalvin/" (22263 5262 0 0) "Wallpapers/" "util/" "settings/" "sermon_edits/" "Public/" "Pictures/" "perl5/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "developer/" "Desktop/" "Books/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Clayton’s MacBook Pro-5.0.8" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".perlbrew/" ".oh-my-zsh/" ".ipython/" ".gitconfig" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".cpan/" ".CFUserTextEncoding" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" "$MYVIMRC" "../" "./")
+
+ ("/Users/wccalvin/developer/perl/" (22263 3014 0 0) "../" "./")
+
+ ("/Users/wccalvin/developer/" (22263 3014 0 0) "python/" "perl/" ".emacs.d/" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Users/wccalvin/developer/python/basics/" (22116 27951 0 0) "list.py" "avg_speed.py" "../" "./")
+
+ ("/Users/wccalvin/developer/python/" (22107 34392 0 0) "README.md" "basics/" ".git/" "../" "./")
+
+ ("/Users/wccalvin/.emacs.d/auto-complete-1.3.1/" (22116 30875 0 0) "auto-complete-settings.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
