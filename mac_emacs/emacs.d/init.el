@@ -33,7 +33,8 @@
     auto-complete                       ; add auto-completion
     fill-column-indicator               ; add fill-column-indicator
     py-autopep8                         ; change to pep8 rules when saving .py
-    material-theme))                    ; add material theme
+    ;; material-theme                   ; add material theme
+    hc-zenburn-theme))                  ; add hc-zenburn theme
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
@@ -63,12 +64,22 @@
 ;; ----------------------------------------------------------------------
 
 (setq inhibit-startup-message t) ;; hide the startup message
-(load-theme 'material t) ;; load material theme
+(load-theme 'hc-zenburn t) ;; load hc-zenburn theme
 (global-linum-mode t) ;; enable line numbers globally
 
 ;; set the default (start) directory
 (if (string= "" (getenv "EMACS_HOME"))
     (defvar emacs_home (getenv "EMACS_HOME")) (defvar emacs_home "~/developer"))
 (setq default-directory emacs_home)
+
+
+;; CPERL CUSTOMIZATION FOR PERL
+;; ----------------------------------------------------------------------
+
+(defalias 'perl-mode 'cperl-mode)
+(setq cperl-electric-keywords t)        ; expands keywords such as foreach, while
+(setq cperl-indent-level 4
+      cperl-tab-always-indent t)
+(setq cperl-hairy t)                    ; turns on most of cperl-mode option
 
 ;; init.el ends here
