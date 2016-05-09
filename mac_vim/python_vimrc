@@ -55,8 +55,6 @@ Plugin 'vim-scripts/indentpython.vim'
 
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-set encoding=utf-8
-
 Bundle 'Valloric/YouCompleteMe'
 
 " let g:ycm_autoclose_preview_window_after_completion=1
@@ -99,7 +97,8 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 Plugin 'kien/ctrlp.vim'
 
-set nu
+set number
+set numberwidth=5
 
 Plugin 'tpope/vim-fugitive'
 
@@ -108,3 +107,35 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 set clipboard=unnamed
 
 Plugin 'jiangmiao/auto-pairs'
+
+" Leader Mappings
+map <Space> <leader>
+map <Leader>w :update<CR>
+map <Leader>q :qall<CR>
+
+" Persistent undo
+set undodir=~/.vim/undo/
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+" Toggle nerdtree with F10
+map <F10> :NERDTreeToggle<CR>
+
+" Enable spellchecking for Markdown
+autocmd FileType markdown setlocal spell
+
+set encoding=utf-8
+set nocompatible
+set history=999
+set wrap
+set incsearch
+set ignorecase
+set smartcase
+set autoread  " set to auto read when a file is changed from outside
+set cmdheight=2  " height of the command bar
+set ruler  " always show current position
+set magic  " turn magic on for regular expressions
+set hlsearch  " search highlighting
+set laststatus=2  " always show the status line
+set backspace=eol,start,indent
