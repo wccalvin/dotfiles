@@ -81,6 +81,6 @@
 (setq cperl-electric-keywords t)        ; expands keywords such as foreach, while
 (setq cperl-indent-level 4
       cperl-tab-always-indent t)
-(setq cperl-hairy t)                    ; turns on most of cperl-mode option
+(setq cperl-hairy t)                    ; turn on lots of cperl options
 
 ;; init.el ends here
