@@ -93,7 +93,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'jistr/vim-nerdtree-tabs'
 
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$']	"ignore files in NERDTree
 
 Plugin 'kien/ctrlp.vim'
 
@@ -132,10 +132,11 @@ set wrap
 set incsearch
 set ignorecase
 set smartcase
-set autoread  " set to auto read when a file is changed from outside
-set cmdheight=2  " height of the command bar
-set ruler  " always show current position
-set magic  " turn magic on for regular expressions
-set hlsearch  " search highlighting
-set laststatus=2  " always show the status line
+set autoread  			" set to auto read when a file is changed from outside
+set cmdheight=2  		" height of the command bar
+set ruler  			" always show current position
+set magic  			" turn magic on for regular expressions
+set hlsearch  			" search highlighting
+set laststatus=2  		" always show the status line
 set backspace=eol,start,indent
+set vb t_vb=			" No error bells
