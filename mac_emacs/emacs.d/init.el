@@ -28,7 +28,8 @@
   '(better-defaults                     ; add the better-defaults
     elpy                                ; add the elpy package
     ein                                 ; add Emacs Ipython Notebook package
-    autopair                            ; add autopair package
+    ;; autopair                            ; add autopair package
+    smartparens                         ; add smartparens
     flycheck                            ; add flycheck (dynamic syntax check)
     auto-complete                       ; add auto-completion
     fill-column-indicator               ; add fill-column-indicator
@@ -44,12 +45,14 @@
 
 (elpy-enable)
 (elpy-use-ipython)
-(require 'autopair)
-(autopair-global-mode) ;; enable autopair in all buffers
+;; (require 'autopair)
+;; (autopair-global-mode) ;; enable autopair in all buffers
 (require 'fill-column-indicator)
 (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
 (global-fci-mode t)
 (ac-config-default)                     ; enable auto-completion
+(require 'smartparens-config)
+(smartparens-global-mode t)
 
 ;; use flycheck not flymake with elpy
 (when (require 'flycheck nil t)
@@ -80,7 +83,8 @@
 (defalias 'perl-mode 'cperl-mode)
 (setq cperl-electric-keywords t)        ; expands keywords such as foreach, while
 (setq cperl-indent-level 4
-      cperl-tab-always-indent t)
-(setq cperl-hairy t)                    ; turn on lots of cperl options
+      cperl-tab-always-indent t
+      cperl-electric-parens nil)
+(setq cperl-hairy nil)                    ; turn on lots of cperl options
 
 ;; init.el ends here
