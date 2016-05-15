@@ -34,7 +34,8 @@
     fill-column-indicator               ; add fill-column-indicator
     py-autopep8                         ; change to pep8 rules when saving .py
     ;; material-theme                   ; add material theme
-    hc-zenburn-theme))                  ; add hc-zenburn theme
+    ;; hc-zenburn-theme                 ; add zenburn-theme
+    atom-dark-theme))                   ; add atom-dark
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
@@ -64,7 +65,7 @@
 ;; ----------------------------------------------------------------------
 
 (setq inhibit-startup-message t) ;; hide the startup message
-(load-theme 'hc-zenburn t) ;; load hc-zenburn theme
+(load-theme 'atom-dark t) ;; load hc-zenburn theme
 (global-linum-mode t) ;; enable line numbers globally
 
 ;; set the default (start) directory
