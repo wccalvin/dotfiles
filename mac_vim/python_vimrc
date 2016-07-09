@@ -1,10 +1,11 @@
+" VIM CONFIG INSPIRED BY REAL PYTHON
+" https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
+
 set nocompatible              " required
 filetype off                  " required
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -26,18 +27,16 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Enable folding
-set foldmethod=indent
+" Code folding
+set foldmethod=indent  	" Enable folding
 set foldlevel=99
-
 " Enable folding with the spacebar
 nnoremap <space> za
-
 Plugin 'tmhedberg/SimpylFold'
-
 let g:SimpylFold_docstring_preview=1
 
-au BufNewFile,BufRead *.py
+" Python Indentation
+au BufNewFile,BufRead *.py, *.pl
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
@@ -46,15 +45,19 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
-au BufNewFile,BufRead *.js,*.html,*.css <here>:</here>
+au BufNewFile,BufRead *.js,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
 
 Plugin 'vim-scripts/indentpython.vim'
+" Flagging unnecessary whitespace
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+" UTF8 Support
+set encoding=utf-8
 
+" Auto-complete
 Bundle 'Valloric/YouCompleteMe'
 
 " let g:ycm_autoclose_preview_window_after_completion=1
@@ -70,42 +73,53 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
+" Syntax Checking/Highlighting
 Plugin 'scrooloose/syntastic'
 
+" PEP8 checking
 Plugin 'nvie/vim-flake8'
 
+" Make the code look pretty
 let python_highlight_all=1
 syntax on
 
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
+" Color Schemes
 if has('gui_running')
   set background=dark
-  colorscheme solarized
+  colorscheme candyman
 else
   colorscheme zenburn
 endif
+call togglebg#map("<F5>") 	" This goes with solarized theme
+				" to toggle the between light and dark theme
 
-call togglebg#map("<F5>")
-
+" File browsing
 Plugin 'scrooloose/nerdtree'
-
 Plugin 'jistr/vim-nerdtree-tabs'
-
 let NERDTreeIgnore=['\.pyc$', '\~$']	"ignore files in NERDTree
+" Toggle nerdtree with F10
+map <F10> :NERDTreeToggle<CR>
 
+" Super Searching
 Plugin 'kien/ctrlp.vim'
 
+" Line Numbering
 set number
 set numberwidth=5
 
+" Git integration
 Plugin 'tpope/vim-fugitive'
 
+" Powerline -- status bar
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+" Access system clipboard when needed
 set clipboard=unnamed
 
+" Auto-pairs for matching parens/quotes and stuff
 Plugin 'jiangmiao/auto-pairs'
 
 " Leader Mappings
@@ -119,14 +133,9 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-" Toggle nerdtree with F10
-map <F10> :NERDTreeToggle<CR>
-
 " Enable spellchecking for Markdown
 autocmd FileType markdown setlocal spell
 
-set encoding=utf-8
-set nocompatible
 set history=999
 set wrap
 set incsearch
@@ -140,3 +149,10 @@ set hlsearch  			" search highlighting
 set laststatus=2  		" always show the status line
 set backspace=eol,start,indent
 set vb t_vb=			" No error bells
+
+" Swap and backup in a location
+set backupdir=~/.vim/backup
+set directory=~/.vim/swap
+set undodir=~/.vim/undo
+set backup
+set writebackup
