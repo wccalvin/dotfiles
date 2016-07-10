@@ -18,10 +18,12 @@ Plugin 'gmarik/Vundle.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set splitbelow
-set splitright
+" Manage plugins using pathogen
+execute pathogen#infect()
 
 " split navigations
+set splitbelow
+set splitright
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -136,18 +138,12 @@ set undoreload=10000
 " Enable spellchecking for Markdown
 autocmd FileType markdown setlocal spell
 
-set history=999
 set wrap
-set incsearch
 set ignorecase
 set smartcase
-set autoread  			" set to auto read when a file is changed from outside
 set cmdheight=2  		" height of the command bar
-set ruler  			" always show current position
 set magic  			" turn magic on for regular expressions
 set hlsearch  			" search highlighting
-set laststatus=2  		" always show the status line
-set backspace=eol,start,indent
 set vb t_vb=			" No error bells
 
 " Swap and backup in a location
