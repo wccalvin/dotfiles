@@ -38,23 +38,23 @@ Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
 
 " Python Indentation
-au BufNewFile,BufRead *.py, *.pl
+set fileformat=unix
+au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
     \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |
-    \ set fileformat=unix |
 
-au BufNewFile,BufRead *.js,*.html,*.css
+au BufNewFile,BufRead *.js,*.html,*.css <here>:</here>
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
 
 Plugin 'vim-scripts/indentpython.vim'
 " Flagging unnecessary whitespace
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " UTF8 Support
 set encoding=utf-8
@@ -64,8 +64,6 @@ Bundle 'Valloric/YouCompleteMe'
 
 " let g:ycm_autoclose_preview_window_after_completion=1
 " map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" python with virtualenv support
 py << EOF
 import os
 import sys
