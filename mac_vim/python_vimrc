@@ -1,4 +1,4 @@
-" VIM CONFIG INSPIRED BY REAL PYTHON
+" VIM CONFIG INSPIRED BY REAL PYTHON and MANY MORE ONLINE FINDINGS...
 " https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
 
 set nocompatible              " required
@@ -89,9 +89,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Color Schemes
 if has('gui_running')
   set background=dark
-  colorscheme candyman
+  colorscheme candycode
 else
-  colorscheme zenburn
+  colorscheme emacs
 endif
 call togglebg#map("<F5>") 	" This goes with solarized theme
 				" to toggle the between light and dark theme
@@ -135,7 +135,6 @@ set undoreload=10000
 
 " Enable spellchecking for Markdown
 autocmd FileType markdown setlocal spell
-
 set wrap
 set ignorecase
 set smartcase
