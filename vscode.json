@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 13,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Level Up",
+    "window.zoomLevel": 0,
+    "editor.rulers": [80, 100],
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=email"
+    ],
+    "files.trimTrailingWhitespace": true
+}
