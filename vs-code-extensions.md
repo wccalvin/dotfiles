@@ -8,7 +8,6 @@ Here's the list of extensions I currently use.
 Python
 SQL Server
 TCL
-TSLint
 XML Tools
  ```
 
