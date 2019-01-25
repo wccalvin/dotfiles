@@ -1,19 +1,30 @@
-# Themes
+# vs-code extensions
 
-* Cobalt2
-* Level Up
-* Night Owl
+Here's the list of extensions I currently use.
 
-# Productivity
+## Language Based
 
-* Better Comments
-* Code Runner
-* VIM
-* vscode icons
+```text
+Python
+SQL Server
+TCL
+TSLint
+XML Tools
+ ```
 
-# Language Based
+## Productivity
 
-* Python
-* SQL Server
-* TCL
-* TSLint
+```text
+Better Comments
+Code Runner
+VIM
+vscode icons
+```
+
+## Themes
+
+```text
+Cobalt2
+Level Up
+Night Owl
+```
