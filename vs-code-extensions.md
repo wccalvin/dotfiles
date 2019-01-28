@@ -2,7 +2,7 @@
 
 Here's the list of extensions I currently use.
 
-## Language Based
+## Language
 
 ```text
 Python
@@ -11,19 +11,19 @@ TCL
 XML Tools
  ```
 
-## Productivity
-
-```text
-Better Comments
-Code Runner
-VIM
-vscode icons
-```
-
 ## Themes
 
 ```text
 Cobalt2
 Level Up
 Night Owl
+```
+
+## Tools
+
+```text
+Better Comments
+Code Runner
+VIM
+vscode icons
 ```
