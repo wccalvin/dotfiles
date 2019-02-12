@@ -1,10 +1,25 @@
 {
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.cursorBlinking": "smooth",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
-    "editor.rulers": [80, 100],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "explorer.sortOrder": "type",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "autopep8",
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Night Owl No Italics",
     "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 0
+    "workbench.editor.highlightModifiedTabs": true,
+    "window.zoomLevel": 0,
+    "jira-plugin.workingProject": "QAAUTO",
+    "jira-plugin.baseUrl": "http://jirasim.ux.dsone.3ds.com",
+    "jira-plugin.username": "vwj"
 }

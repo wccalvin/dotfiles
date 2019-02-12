@@ -5,6 +5,8 @@ Here's the list of extensions I currently use.
 ## Language
 
 ```text
+Jira Plugin
+markdownlint
 Python
 SQL Server
 TCL
