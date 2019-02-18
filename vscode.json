@@ -3,7 +3,6 @@
     "editor.cursorBlinking": "smooth",
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
-    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.rulers": [
         80,
