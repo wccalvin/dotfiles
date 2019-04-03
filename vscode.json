@@ -18,7 +18,7 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
     "window.zoomLevel": 0,
-    "jira-plugin.workingProject": "QAAUTO",
-    "jira-plugin.baseUrl": "http://jirasim.ux.dsone.3ds.com",
-    "jira-plugin.username": "vwj"
+    "[html]": {
+        "editor.tabSize": 2
+    }
 }
