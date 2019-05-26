@@ -17,6 +17,7 @@
     "workbench.colorTheme": "Night Owl No Italics",
     "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.settings.editor": "json",
     "window.zoomLevel": 0,
     "[html]": {
         "editor.tabSize": 2
