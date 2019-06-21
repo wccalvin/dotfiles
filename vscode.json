@@ -8,29 +8,54 @@
         80,
         100
     ],
+    "[xml]": {
+        "editor.tabSize": 2
+    },
     "explorer.sortOrder": "type",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "files.associations": {
         "*.sah": "javascript"
     },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.vscode": true,
+        "**/__pycache__": true,
+        "**/node_modules": true,
+        "venv": true,
+        "env*": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "env-*": true
+    },
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "autopep8",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Night Owl No Italics",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/env": true,
+        "**/venv": true
+    },
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Night Owl (No Italics)",
     "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
-    "workbench.settings.editor": "json",
     "window.zoomLevel": 0,
-    "[html]": {
-        "editor.tabSize": 2
-    },
     "[markdown]": {
         "editor.wordWrap": "on",
         "editor.quickSuggestions": false,
         "editor.tabSize": 2
     },
-    "[xml]": {
+    "[html]": {
         "editor.tabSize": 2
     },
     "[javascript]": {
