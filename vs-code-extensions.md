@@ -24,7 +24,9 @@ Night Owl
 
 ```text
 Better Comments
+Bracket Pair Colorizer
 Code Runner
 VIM
 vscode icons
+vscode-spotify
 ```
