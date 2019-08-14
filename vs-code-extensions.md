@@ -28,7 +28,4 @@ VIM
 vscode icons
 Visual Studio Intellicode
 Bracket Pair Colorizer
-Code Runner
-VIM
-vscode icons
 ```
