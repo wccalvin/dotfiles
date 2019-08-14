@@ -5,7 +5,6 @@ Here's the list of extensions I currently use.
 ## Language
 
 ```text
-Jira Plugin
 markdownlint
 Python
 SQL Server
@@ -28,4 +27,8 @@ Code Runner
 VIM
 vscode icons
 Visual Studio Intellicode
+Bracket Pair Colorizer
+Code Runner
+VIM
+vscode icons
 ```
