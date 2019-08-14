@@ -24,8 +24,8 @@ Night Owl
 ## Tools
 
 ```text
-Better Comments
 Code Runner
 VIM
 vscode icons
+Visual Studio Intellicode
 ```
