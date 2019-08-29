@@ -5,6 +5,7 @@ Here's the list of extensions I currently use.
 ## Language
 
 ```text
+ESLint
 markdownlint
 Python
 SQL Server
@@ -18,14 +19,15 @@ XML Tools
 Cobalt2
 Level Up
 Night Owl
+One Dark Pro
 ```
 
 ## Tools
 
 ```text
+Auto Rename Tag
 Better Comments
 Bracket Pair Colorizer
-Code Runner
 VIM
 vscode icons
 vscode-spotify
