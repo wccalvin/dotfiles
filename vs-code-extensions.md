@@ -29,6 +29,6 @@ Auto Rename Tag
 Better Comments
 Bracket Pair Colorizer
 VIM
+Visual Studio Intellicode
 vscode icons
-vscode-spotify
 ```
