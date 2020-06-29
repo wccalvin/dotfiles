@@ -1,11 +1,12 @@
 {
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.copyWithSyntaxHighlighting": true,
     "editor.cursorBlinking": "smooth",
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.rulers": [
-        80,
+        88,
         100
     ],
     "[xml]": {
@@ -37,8 +38,10 @@
         "**/venv/**": true,
         "env-*": true
     },
-    "python.linting.flake8Enabled": true,
-    "python.formatting.provider": "autopep8",
+    "python.formatting.provider": "black",
+    "python.linting.flake8Args": [
+        "--ignore=E501"
+    ],
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -46,9 +49,11 @@
         "**/venv": true
     },
     "telemetry.enableTelemetry": false,
-    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.settings.editor": "json",
+    "workbench.colorTheme": "ReUI Mirage (react-native)",
     "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.startupEditor": "none",
     "window.zoomLevel": 0,
     "[markdown]": {
         "editor.wordWrap": "on",
@@ -59,7 +64,13 @@
         "editor.tabSize": 2
     },
     "[javascript]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": false
     },
     "[json]": {
         "editor.quickSuggestions": {
@@ -67,5 +78,22 @@
         },
         "editor.tabCompletion": "on",
         "editor.tabSize": 2
-    }
+    },
+    "editor.suggestSelection": "first",
+    "eslint.format.enable": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "markdownlint.config": {
+        "MD013": false,
+        "MD009": false,
+        "MD024": false
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "extensions.ignoreRecommendations": false,
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "explorer.confirmDragAndDrop": false,
+    "python.jediEnabled": false,
+    "python.languageServer": "Microsoft",
 }
