@@ -2,7 +2,7 @@
 
 Here's the list of extensions I currently use.
 
-## Language
+## Languages
 
 ``` text
 ESLint
