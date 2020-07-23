@@ -2,7 +2,7 @@
     name = Clayton William
     email = 
 [core]
-    excludesfile = /c/users/vwj/.gitignore_global
+    excludesfile = <path to .gitignore_global>
 	editory = vim
 [diff]
     tool = vimdiff
