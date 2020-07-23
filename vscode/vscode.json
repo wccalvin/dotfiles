@@ -94,6 +94,5 @@
     "extensions.ignoreRecommendations": false,
     "workbench.iconTheme": "eq-material-theme-icons-light",
     "explorer.confirmDragAndDrop": false,
-    "python.jediEnabled": false,
     "python.languageServer": "Microsoft",
 }
