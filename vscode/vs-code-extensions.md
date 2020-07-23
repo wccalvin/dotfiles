@@ -20,7 +20,6 @@ Andromeda
 Cobalt2
 Community Material
 Field Lights
-Indenticator
 Level Up
 New Moon Syntax 
 Night Owl
@@ -39,7 +38,6 @@ Material Theme Icons
 
 ``` text
 Auto Rename Tag
-Better Comments
 Bracket Pair Colorizer
 Identicator
 Live Server
