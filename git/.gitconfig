@@ -1,6 +1,6 @@
 [user]
     name = Clayton William
-    email = clayton.william@3ds.com
+    email = 
 [core]
     excludesfile = /c/users/vwj/.gitignore_global
 	editory = vim
