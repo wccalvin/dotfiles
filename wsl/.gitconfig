@@ -1,0 +1,26 @@
+[user]
+    name = wccalvin
+    email = clayton.calvin@gmail.com
+[core]
+    excludesfile = /c/users/vwj/.gitignore_global
+	editory = vim
+[diff]
+    tool = vimdiff
+[merge]
+    tool = vimdiff
+[color]
+	ui = true
+[alias]
+    a   = add
+    b   = branch
+    d   = diff
+    aa  = add --all
+    s   = status
+    p   = pull
+    cm  = commit -m
+    cam  = commit -am
+    pom = push origin master
+    cob = checkout -b
+    co  = checkout
+    l   = log --oneline --decorate --graph
+    ls  = log --oneline --decorate --graph --stat
