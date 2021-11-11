@@ -2,7 +2,8 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.copyWithSyntaxHighlighting": true,
     "editor.cursorBlinking": "smooth",
-    "editor.fontFamily": "Cascadia Code PL",
+    "editor.fontFamily": "Cascadia Mono",
+    "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.formatOnSave": true,
     "editor.rulers": [
@@ -51,9 +52,9 @@
         "**/env": true,
         "**/venv": true
     },
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.startupEditor": "none",
@@ -89,21 +90,28 @@
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": false,
     "explorer.confirmDragAndDrop": false,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
     "workbench.sideBar.location": "right",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "workbench.iconTheme": "field-lights-monochrome",
+    "workbench.iconTheme": "material-icon-theme",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.minimap.enabled": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "python.showStartPage": false,
     "explorer.openEditors.visible": 0,
     "editor.lineNumbers": "relative",
-    "window.zoomLevel": 0,
+    "html.suggest.html5": true,
+    "settingsSync.ignoredExtensions": [
+        "ms-python.python"
+    ],
+    "explorer.confirmDelete": false,
+    "python.pythonPath": "C:\\Users\\vwj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "cSpell.userWords": [
+        "envvar"
+    ],
 }
