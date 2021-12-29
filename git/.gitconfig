@@ -1,25 +1,29 @@
 [user]
-    name = Clayton William
-    email = 
+	name = Clayton William
+    	email = 
 [core]
-    excludesfile = <path to .gitignore_global>
+	excludesfile = <path to .gitignore_global>
 	editory = vim
+	autocrlf = input
 [diff]
-    tool = vimdiff
+	tool = vimdiff
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 [color]
 	ui = true
 [alias]
-    a   = add
-    b   = branch
-    aa  = add --all
-    s   = status
-    p   = pull
-    cm  = commit -m
-    cam  = commit -am
-    pom = push origin master
-    cob = checkout -b
-    co  = checkout
-    l   = log --oneline --decorate --graph
-    ls  = log --oneline --decorate --graph --stat
+	a   = add
+	b   = branch
+	aa  = add --all
+	s   = status
+	p   = pull
+	cm  = commit -m
+	cam  = commit -am
+	pom = push origin master
+	cob = checkout -b
+	co  = checkout
+	db  = branch -D
+	l   = log --oneline --decorate --graph
+	ls  = log --oneline --decorate --graph --stat
+[help]
+	autocorrect = 1
