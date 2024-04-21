@@ -1,5 +1,5 @@
 # dotfiles
 
-My config files vary between windows/wsl/mac setup. They evolve regularly as I explore new projects, aiming for minimalism. Use caution when copying directly, rather use them as inspiration for your own setup.
+My config files vary between windows/wsl/mac setup. They evolve periodically as I explore new projects. Use caution when copying directly, rather use them as inspiration for your own setup.
 
 -Clayton
